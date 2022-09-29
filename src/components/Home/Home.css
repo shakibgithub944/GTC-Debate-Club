@@ -9,7 +9,7 @@
     align-items: center;
     /* justify-content: center; */
     margin-left: 100px;
-    color:#5856d6;
+    color: #5856d6;
 }
 
 .icon {
@@ -85,7 +85,6 @@
     height: 30px;
     background-color: #5856d6;
     border-radius: 10px;
-    /* box-shadow: 7px 10px 35px -18px rgba(0, 0, 0, 1); */
     color: white;
 }
 
@@ -103,6 +102,26 @@
 }
 
 /* Responsive */
+
+@media screen and (max-width: 1280px) {
+    .practice-details {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .Home-page {
+        flex-direction: column;
+        background-color: aliceblue;
+    }
+
+    .my-plan {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
 @media screen and (max-width: 580px) {
     .Home-page {
         flex-direction: column;
@@ -118,8 +137,9 @@
     .my-plan {
         width: 100%;
         margin-top: 20px;
-        background-color: white;
-        padding: 8px;
-        border-radius: 10px;
+    }
+
+    .my-info p {
+        padding-right: 8px;
     }
 }
