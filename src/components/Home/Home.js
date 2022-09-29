@@ -53,9 +53,10 @@ const Home = () => {
         <div className=''>
             <div className="caption">
                 <FontAwesomeIcon className='icon' icon={faCommentSlash}></FontAwesomeIcon>
-                <h1>GTC-Debate-Club</h1>
+                <h1>GTC-Debate-Club</h1> <br />
             </div>
 
+                <p style={{marginLeft:'3%', color:'#757575'}}>Select Your Today's Practice Plan</p>
             <div className="Home-page">
 
                 <div className="practice-details">
