@@ -7,18 +7,23 @@ import Practice from '../PracticeTopic/Practice';
 const Home = () => {
     const [practices, setPractices] = useState([]);
     const [practiceTime, setPracticeTime] = useState([]);
+    const [breakTime, setBreakTime] = useState([]);
 
     useEffect(() => {
         fetch('fakedb.json')
             .then(res => res.json())
             .then(data => setPractices(data))
     }, [])
-    
+
     const handlePracticeTime = (time) => {
         const newTime = parseFloat(practiceTime + time);
         setPracticeTime(newTime)
-        console.log(newTime);
     }
+    const getBreakTimeValue = (e) => {
+        const getValue = e.target.innerText;
+        setBreakTime(getValue);
+    }
+
 
     return (
         <div className=''>
@@ -54,17 +59,17 @@ const Home = () => {
                     </div>
                     <h3>Break Time</h3>
                     <div className="break-times">
-                        <div className="break-time"><p>20sec</p></div>
-                        <div className="break-time"><p>30sec</p></div>
-                        <div className="break-time"><p>40sec</p></div>
-                        <div className="break-time"><p>50sec</p></div>
+                        <div className="break-time"><p onClick={getBreakTimeValue}>20sec</p></div>
+                        <div className="break-time"><p onClick={getBreakTimeValue}>30sec</p></div>
+                        <div className="break-time"><p onClick={getBreakTimeValue}>40sec</p></div>
+                        <div className="break-time"><p onClick={getBreakTimeValue}>50sec</p></div>
                     </div>
                     <h3>Practice Details</h3>
                     <div className="practice-time">
                         <p><b>Practice time: {practiceTime} Sec</b></p>
                     </div>
                     <div className="rest-time">
-                        <p><b>Break time: 2000Sec</b></p>
+                        <p><b>Break time: {breakTime}</b></p>
                     </div>
                     <p className='complete-button'>Practice Complete</p>
                 </div>
