@@ -12,7 +12,7 @@ body {
     align-items: center;
     /* justify-content: center; */
     margin-left: 100px;
-    color: #5856d6;
+    color: #e3215e;
 }
 
 .icon {
@@ -31,7 +31,6 @@ body {
 
 .my-plan {
     width: 20%;
-    background-color: white;
     padding: 8px;
     border-radius: 10px;
     box-shadow: 7px 10px 35px -18px rgba(0, 0, 0, 1);
@@ -52,7 +51,7 @@ body {
 .my-info {
     margin-top: 20px;
     color: white;
-    background-color: #5856d6;
+    background-color: #e3215e;
     padding: 8px;
     border-radius: 10px;
     display: flex;
@@ -72,7 +71,7 @@ body {
     height: 30px;
     border-radius: 50%;
     padding: 15px;
-    background-color: #5856d6;
+    background-color: #e3215e;
     box-shadow: 7px 10px 35px -18px rgba(0, 0, 0, 1);
 }
 
@@ -87,7 +86,7 @@ body {
     padding-top: 10px;
     width: 200px;
     height: 30px;
-    background-color: #5856d6;
+    background-color: #e3215e;
     border-radius: 10px;
     color: white;
 }
@@ -96,7 +95,7 @@ body {
     width: 95%;
     height: 32px;
     color: white;
-    background-color: #5856d6;
+    background-color: #e3215e;
     text-align: center;
     font-weight: bold;
     margin-top: 20px;

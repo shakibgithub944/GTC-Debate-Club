@@ -72,21 +72,21 @@ const Home = () => {
                 <div className="my-plan">
                     <div className="my-name">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7O3z-vBCbOAdrGKWmXBxle1j8Q1GXeddf97sXeyxQvg&s" alt="" />
-                        <h4 style={{ color: "#5856d6" }}>Nazmush Shakib</h4>
+                        <h4 style={{ color: "#e3215e" }}>Nazmush Shakib</h4>
                     </div>
                     <div className="my-info">
                         <p><b>Weight: 65 kg</b></p>
                         <p><b>Height: 5'8 Inch</b></p>
                         <p><b>Age: 22 Years</b></p>
                     </div>
-                    <h2 style={{ color: "#5856d6" }}>Break Time</h2>
+                    <h2 style={{ color: "#e3215e" }}>Break Time</h2>
                     <div className="break-times">
                         <div className="break-time" onClick={getBreakTimeValue}><p>20sec</p></div>
                         <div className="break-time" onClick={getBreakTimeValue}><p>30sec</p></div>
                         <div className="break-time" onClick={getBreakTimeValue}><p>40sec</p></div>
                         <div className="break-time" onClick={getBreakTimeValue}><p>50sec</p></div>
                     </div>
-                    <h2 style={{ color: "#5856d6" }}>Practice Details</h2>
+                    <h2 style={{ color: "#e3215e" }}>Practice Details</h2>
                     <div className="practice-time">
                         <p><b>Practice time: {practiceTime} Sec</b></p>
                     </div>
