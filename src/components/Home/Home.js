@@ -4,6 +4,10 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Practice from '../PracticeTopic/Practice';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 const Home = () => {
     const [practices, setPractices] = useState([]);
     const [practiceTime, setPracticeTime] = useState([0]);
@@ -30,6 +34,20 @@ const Home = () => {
         const getTime = localStorage.getItem('time');
         setBreakTime(getTime);
     }
+    // toast function start
+    const notify = () => {
+        toast.success('Practice Complete', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+    }
+
+    // toast end
 
     return (
         <div className=''>
@@ -50,8 +68,6 @@ const Home = () => {
                     }
 
                 </div>
-
-
                 {/* my plan start */}
                 <div className="my-plan">
                     <div className="my-name">
@@ -77,12 +93,12 @@ const Home = () => {
                     <div className="rest-time">
                         <p><b>Break time: {breakTime}</b></p>
                     </div>
-                    <p className='complete-button'>Practice Complete</p>
+                    <p className='complete-button' onClick={notify}>Practice Complete</p>
                 </div>
                 {/* my plan end */}
 
             </div>
-
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
