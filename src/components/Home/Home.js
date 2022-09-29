@@ -10,27 +10,26 @@ const Home = () => {
     const [breakTime, setBreakTime] = useState([]);
     useEffect(() => {
         fetch('fakedb.json')
-        .then(res => res.json())
-        .then(data => setPractices(data))
+            .then(res => res.json())
+            .then(data => setPractices(data))
     }, [])
-    
+
     useEffect(() => {
         const getTime = localStorage.getItem('time');
-        console.log(breakTime);
-        
-    }, [])
-    
+        setBreakTime(getTime);
+    }, [breakTime])
+
     const handlePracticeTime = (time) => {
         const newTime = parseFloat(practiceTime + time);
         setPracticeTime(newTime)
     }
+
     const getBreakTimeValue = (e) => {
         const getValue = e.target.innerText;
-        const setTime = localStorage.setItem('time', getValue);      
-        setBreakTime(setTime);
-        
+        localStorage.setItem('time', getValue);
+        const getTime = localStorage.getItem('time');
+        setBreakTime(getTime);
     }
-
 
     return (
         <div className=''>
