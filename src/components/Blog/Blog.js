@@ -5,6 +5,7 @@ const Blog = () => {
     return (
         <div className='blog-container'>
             <div className="blogs">
+                <h1>Blog Section</h1>
                 <h4>Q: How does react works?</h4>
                 <p><b>ans:</b>ReactJS divides the UI into isolated reusable pieces of code known as components. React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props. It's possible to have as many components as necessary without cluttering your code.</p>
 

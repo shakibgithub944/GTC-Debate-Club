@@ -1,6 +1,9 @@
+body {
+    background-color: aliceblue;
+}
+
 .Home-page {
     padding: 30px;
-    background-color: aliceblue;
     display: flex;
 }
 
@@ -31,6 +34,7 @@
     background-color: white;
     padding: 8px;
     border-radius: 10px;
+    box-shadow: 7px 10px 35px -18px rgba(0, 0, 0, 1);
 }
 
 .my-name {
@@ -90,18 +94,18 @@
 
 .complete-button {
     width: 95%;
-    height: 40px;
+    height: 32px;
     color: white;
     background-color: #5856d6;
     text-align: center;
     font-weight: bold;
     margin-top: 20px;
-    padding-top: 15px;
+    padding-top: 10px;
     border-radius: 0px 50px;
     box-shadow: 7px 10px 35px -18px rgba(0, 0, 0, 1);
 }
 
-/* Responsive */
+/* Responsive  for tablet */
 
 @media screen and (max-width: 1280px) {
     .practice-details {
@@ -113,7 +117,6 @@
 
     .Home-page {
         flex-direction: column;
-        background-color: aliceblue;
     }
 
     .my-plan {
@@ -122,10 +125,11 @@
     }
 }
 
+/*========>  Responsive for Mobile device  <======== */
+
 @media screen and (max-width: 580px) {
     .Home-page {
         flex-direction: column;
-        background-color: aliceblue;
     }
 
     .practice-details {

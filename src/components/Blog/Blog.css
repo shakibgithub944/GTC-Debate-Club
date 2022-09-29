@@ -1,4 +1,9 @@
-.blog-container{
+.blog-container {
     width: 70%;
     margin-left: 10%;
+}
+
+.blog-container h1,
+h4 {
+    color: #5856d6;
 }
