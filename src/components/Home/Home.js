@@ -6,12 +6,19 @@ import Practice from '../PracticeTopic/Practice';
 
 const Home = () => {
     const [practices, setPractices] = useState([]);
+    const [practiceTime, setPracticeTime] = useState([]);
 
     useEffect(() => {
         fetch('fakedb.json')
             .then(res => res.json())
             .then(data => setPractices(data))
     }, [])
+    
+    const handlePracticeTime = (time) => {
+        const newTime = parseFloat(practiceTime + time);
+        setPracticeTime(newTime)
+        console.log(newTime);
+    }
 
     return (
         <div className=''>
@@ -27,6 +34,7 @@ const Home = () => {
                         practices.map(practice => <Practice
                             key={practice._id}
                             practice={practice}
+                            handlePracticeTime={handlePracticeTime}
                         ></Practice>)
                     }
 
@@ -53,7 +61,7 @@ const Home = () => {
                     </div>
                     <h3>Practice Details</h3>
                     <div className="practice-time">
-                        <p><b>Practice time: 2000Sec</b></p>
+                        <p><b>Practice time: {practiceTime} Sec</b></p>
                     </div>
                     <div className="rest-time">
                         <p><b>Break time: 2000Sec</b></p>
