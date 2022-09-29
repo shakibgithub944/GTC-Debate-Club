@@ -6,22 +6,29 @@ import Practice from '../PracticeTopic/Practice';
 
 const Home = () => {
     const [practices, setPractices] = useState([]);
-    const [practiceTime, setPracticeTime] = useState([]);
+    const [practiceTime, setPracticeTime] = useState([0]);
     const [breakTime, setBreakTime] = useState([]);
-
     useEffect(() => {
         fetch('fakedb.json')
-            .then(res => res.json())
-            .then(data => setPractices(data))
+        .then(res => res.json())
+        .then(data => setPractices(data))
     }, [])
-
+    
+    useEffect(() => {
+        const getTime = localStorage.getItem('time');
+        console.log(breakTime);
+        
+    }, [])
+    
     const handlePracticeTime = (time) => {
         const newTime = parseFloat(practiceTime + time);
         setPracticeTime(newTime)
     }
     const getBreakTimeValue = (e) => {
         const getValue = e.target.innerText;
-        setBreakTime(getValue);
+        const setTime = localStorage.setItem('time', getValue);      
+        setBreakTime(setTime);
+        
     }
 
 
@@ -59,10 +66,10 @@ const Home = () => {
                     </div>
                     <h3>Break Time</h3>
                     <div className="break-times">
-                        <div className="break-time"><p onClick={getBreakTimeValue}>20sec</p></div>
-                        <div className="break-time"><p onClick={getBreakTimeValue}>30sec</p></div>
-                        <div className="break-time"><p onClick={getBreakTimeValue}>40sec</p></div>
-                        <div className="break-time"><p onClick={getBreakTimeValue}>50sec</p></div>
+                        <div className="break-time" onClick={getBreakTimeValue}><p>20sec</p></div>
+                        <div className="break-time" onClick={getBreakTimeValue}><p>30sec</p></div>
+                        <div className="break-time" onClick={getBreakTimeValue}><p>40sec</p></div>
+                        <div className="break-time" onClick={getBreakTimeValue}><p>50sec</p></div>
                     </div>
                     <h3>Practice Details</h3>
                     <div className="practice-time">
