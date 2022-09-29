@@ -7,8 +7,9 @@
 .caption {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: lightseagreen;
+    /* justify-content: center; */
+    margin-left: 100px;
+    color:#5856d6;
 }
 
 .icon {
@@ -46,6 +47,8 @@
 
 .my-info {
     margin-top: 20px;
+    color: white;
+    background-color: #5856d6;
     padding: 8px;
     border-radius: 10px;
     display: flex;
@@ -55,6 +58,7 @@
 .break-times {
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .break-time {
@@ -64,8 +68,8 @@
     height: 30px;
     border-radius: 50%;
     padding: 15px;
-    background-color: lightblue;
-    /* box-shadow: 1px 1px 5px; */
+    background-color: #5856d6;
+    box-shadow: 7px 10px 35px -18px rgba(0, 0, 0, 1);
 }
 
 .break-time p {
@@ -79,19 +83,23 @@
     padding-top: 10px;
     width: 200px;
     height: 30px;
-    background-color: lightcyan;
+    background-color: #5856d6;
     border-radius: 10px;
+    /* box-shadow: 7px 10px 35px -18px rgba(0, 0, 0, 1); */
+    color: white;
 }
 
 .complete-button {
     width: 95%;
     height: 40px;
-    background-color: lightblue;
+    color: white;
+    background-color: #5856d6;
     text-align: center;
     font-weight: bold;
     margin-top: 20px;
     padding-top: 15px;
     border-radius: 0px 50px;
+    box-shadow: 7px 10px 35px -18px rgba(0, 0, 0, 1);
 }
 
 /* Responsive */
@@ -109,6 +117,7 @@
 
     .my-plan {
         width: 100%;
+        margin-top: 20px;
         background-color: white;
         padding: 8px;
         border-radius: 10px;
