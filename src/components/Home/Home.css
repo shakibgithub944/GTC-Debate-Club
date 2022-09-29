@@ -2,7 +2,6 @@
     padding: 30px;
     background-color: aliceblue;
     display: flex;
-    align-items: center;
 }
 
 .caption {
@@ -20,12 +19,17 @@
 
 .practice-details {
     width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 
 }
 
 .my-plan {
     width: 20%;
     background-color: white;
+    padding: 8px;
+    border-radius: 10px;
 }
 
 .my-name {
@@ -39,10 +43,74 @@
     height: 50px;
     border-radius: 50%;
 }
-.my-info{
+
+.my-info {
     margin-top: 20px;
     padding: 8px;
     border-radius: 10px;
     display: flex;
     align-items: center;
+}
+
+.break-times {
+    display: flex;
+    align-items: center;
+}
+
+.break-time {
+    text-align: center;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: lightblue;
+    /* box-shadow: 1px 1px 5px; */
+}
+
+.break-time p {
+    margin: 0px;
+    font-weight: bold;
+}
+
+.practice-time p,
+.rest-time p {
+    text-align: center;
+    padding-top: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: lightcyan;
+    border-radius: 10px;
+}
+
+.complete-button {
+    width: 95%;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-radius: 0px 50px;
+}
+
+/* Responsive */
+@media screen and (max-width: 580px) {
+    .Home-page {
+        flex-direction: column;
+        background-color: aliceblue;
+    }
+
+    .practice-details {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .my-plan {
+        width: 100%;
+        background-color: white;
+        padding: 8px;
+        border-radius: 10px;
+    }
 }

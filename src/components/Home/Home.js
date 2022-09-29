@@ -23,8 +23,12 @@ const Home = () => {
             <div className="Home-page">
 
                 <div className="practice-details">
-                    <h1>practice details card</h1>
-                   <Practice></Practice>
+                    {
+                        practices.map(practice => <Practice
+                            key={practice._id}
+                            practice={practice}
+                        ></Practice>)
+                    }
 
                 </div>
 
@@ -40,6 +44,21 @@ const Home = () => {
                         <p><b>Height: 5'8 Inch</b></p>
                         <p><b>Age: 22 Years</b></p>
                     </div>
+                    <h3>Break Time</h3>
+                    <div className="break-times">
+                        <div className="break-time"><p>20sec</p></div>
+                        <div className="break-time"><p>30sec</p></div>
+                        <div className="break-time"><p>40sec</p></div>
+                        <div className="break-time"><p>50sec</p></div>
+                    </div>
+                    <h3>Practice Details</h3>
+                    <div className="practice-time">
+                        <p><b>Practice time: 2000Sec</b></p>
+                    </div>
+                    <div className="rest-time">
+                        <p><b>Break time: 2000Sec</b></p>
+                    </div>
+                    <p className='complete-button'>Practice Complete</p>
                 </div>
                 {/* my plan end */}
 
