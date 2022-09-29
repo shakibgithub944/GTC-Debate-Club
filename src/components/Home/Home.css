@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    margin-left: 100px;
+    margin-left: 5%;
     color: #e3215e;
 }
 
@@ -126,7 +126,7 @@ body {
 
 /*========>  Responsive for Mobile device  <======== */
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
     .Home-page {
         flex-direction: column;
     }

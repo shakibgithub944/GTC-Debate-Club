@@ -1,62 +1,62 @@
 [
-    {
-      "_id": "63348006924664e0af72f83b",
-      "index": 0,
-      "picture": "https://images.pexels.com/photos/6949393/pexels-photo-6949393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "age": 35,
-      "time": 24,
-      "details": "Work with peers to promote civil, democratic discussions and decision-making and establish individual roles as needed.",
-      "caption": "ENTER UNIVERSITY DEBATE TOPIC",
-      "email": "deliaherman@furnitech.com"
-    },
-    {
-      "_id": "63348006368cd3e8c70cdecb",
-      "index": 1,
-      "picture": "https://images.pexels.com/photos/6949872/pexels-photo-6949872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "age": 27,
-      "time": 35,
-      "details": "Propel conversations by posing and responding to questions that probe reasoning and evidence.",
-      "caption": "WORKSHOP",
-      "email": "joanneirwin@slambda.com"
-    },
-    {
-      "_id": "63348006ab1827b246f7556a",
-      "index": 2,
-      "picture": "https://images.pexels.com/photos/6949415/pexels-photo-6949415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "age": 27,
-      "time": 33,
-      "details": "Present information, findings, and supporting evidence, conveying a clear and distinct perspective.",
-      "caption": "SELF-PRACTICE",
-      "email": "geraldinecastaneda@emtrac.com"
-    },
-    {
-      "_id": "633480062dc4c93168d048c1",
-      "index": 3,
-      "picture": "https://images.pexels.com/photos/6949867/pexels-photo-6949867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "age": 20,
-      "time": 30,
-      "details": "alternative or opposing perspectives development, substance, and style are appropriate to purpose.",
-      "caption": "GENERAL KNOWLEDGE",
-      "email": "houstonyoung@fossiel.com"
-    },
-    {
-      "_id": "63348006c3a34a032a321e3c",
-      "index": 4,
-      "picture": "https://media.istockphoto.com/photos/young-student-presenting-his-startup-project-at-conference-picture-id1141509021?s=612x612",
-      "age": 28,
-      "time": 20,
-      "details": "Have students compare these two debate styles to the methods used in the United",
-      "caption": "READING BOOK",
-      "email": "talleyrivera@zoarere.com"
-    },
-    {
-      "_id": "63348006334ead539c340f11",
-      "index": 5,
-      "picture": "https://media.istockphoto.com/photos/teen-girls-debates-with-peers-in-class-picture-id1146107040?s=612x612",
-      "age": 39,
-      "time": 33,
-      "details": "We have all been there. You are asked to stand before an audience to present a topic.",
-      "caption": "DAILY TASK",
-      "email": "oneilltrujillo@cubix.com"
-    }
-  ]
+  {
+    "_id": "63348006924664e0af72f83b",
+    "index": 0,
+    "picture": "https://images.pexels.com/photos/6949393/pexels-photo-6949393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "age": 35,
+    "time": 25,
+    "details": "Work with peers to promote civil, democratic discussions and decision-making and establish individual roles as needed.",
+    "caption": "ENTER UNIVERSITY DEBATE TOPIC",
+    "email": "deliaherman@furnitech.com"
+  },
+  {
+    "_id": "63348006368cd3e8c70cdecb",
+    "index": 1,
+    "picture": "https://images.pexels.com/photos/6949872/pexels-photo-6949872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "age": 27,
+    "time": 35,
+    "details": "Propel conversations by posing and responding to questions that probe reasoning and evidence.",
+    "caption": "WORKSHOP",
+    "email": "joanneirwin@slambda.com"
+  },
+  {
+    "_id": "63348006ab1827b246f7556a",
+    "index": 2,
+    "picture": "https://images.pexels.com/photos/6949415/pexels-photo-6949415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "age": 27,
+    "time": 45,
+    "details": "Present information, findings, and supporting evidence, conveying a clear and distinct perspective.",
+    "caption": "SELF-PRACTICE",
+    "email": "geraldinecastaneda@emtrac.com"
+  },
+  {
+    "_id": "633480062dc4c93168d048c1",
+    "index": 3,
+    "picture": "https://images.pexels.com/photos/6949867/pexels-photo-6949867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "age": 20,
+    "time": 30,
+    "details": "alternative or opposing perspectives development, substance, and style are appropriate to purpose.",
+    "caption": "GENERAL KNOWLEDGE",
+    "email": "houstonyoung@fossiel.com"
+  },
+  {
+    "_id": "63348006c3a34a032a321e3c",
+    "index": 4,
+    "picture": "https://media.istockphoto.com/photos/young-student-presenting-his-startup-project-at-conference-picture-id1141509021?s=612x612",
+    "age": 28,
+    "time": 20,
+    "details": "Have students compare these two debate styles to the methods used in the United",
+    "caption": "READING BOOK",
+    "email": "talleyrivera@zoarere.com"
+  },
+  {
+    "_id": "63348006334ead539c340f11",
+    "index": 5,
+    "picture": "https://media.istockphoto.com/photos/teen-girls-debates-with-peers-in-class-picture-id1146107040?s=612x612",
+    "age": 39,
+    "time": 30,
+    "details": "We have all been there. You are asked to stand before an audience to present a topic.",
+    "caption": "DAILY TASK",
+    "email": "oneilltrujillo@cubix.com"
+  }
+]

@@ -11,7 +11,7 @@ const Practice = (props) => {
         <h3>{caption}</h3>
         <p>{details}</p>
         <h5>For Age : 20-25</h5>
-        <h5>Time Required: {time}sec</h5>
+        <h5>Time Required: {time} Minuite</h5>
         <p className='add-button' onClick={() => props.handlePracticeTime(time)}>Add to list</p>
       </div>
     </div>

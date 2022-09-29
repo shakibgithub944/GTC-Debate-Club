@@ -81,14 +81,14 @@ const Home = () => {
                     </div>
                     <h2 style={{ color: "#e3215e" }}>Break Time</h2>
                     <div className="break-times">
-                        <div className="break-time" onClick={getBreakTimeValue}><p>20sec</p></div>
-                        <div className="break-time" onClick={getBreakTimeValue}><p>30sec</p></div>
-                        <div className="break-time" onClick={getBreakTimeValue}><p>40sec</p></div>
-                        <div className="break-time" onClick={getBreakTimeValue}><p>50sec</p></div>
+                        <div className="break-time" onClick={getBreakTimeValue}><p>20 Min</p></div>
+                        <div className="break-time" onClick={getBreakTimeValue}><p>30 Min</p></div>
+                        <div className="break-time" onClick={getBreakTimeValue}><p>40 Min</p></div>
+                        <div className="break-time" onClick={getBreakTimeValue}><p>50 Min</p></div>
                     </div>
                     <h2 style={{ color: "#e3215e" }}>Practice Details</h2>
                     <div className="practice-time">
-                        <p><b>Practice time: {practiceTime} Sec</b></p>
+                        <p><b>Practice time: {practiceTime} Minute</b></p>
                     </div>
                     <div className="rest-time">
                         <p><b>Break time: {breakTime}</b></p>
